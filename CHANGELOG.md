@@ -8,6 +8,13 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.1.8 — 2026-09-30
+
+- **The Environment panel's "The hour" box has its bar back.** Like the Range
+  and Direction boxes beside it, it now shows a small bar with a line marking
+  where the market counts as "boxed in", so you can see at a glance how close
+  the last hour is to that line. It was missing on installed copies.
+
 ## 0.1.7 — 2026-09-30
 
 - **The update button no longer says "The update did not start" when it did.**
