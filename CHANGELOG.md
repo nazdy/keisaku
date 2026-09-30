@@ -8,6 +8,23 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.1.9 — 2026-10-01
+
+- **Reports are written much faster.** After the first run, a report takes
+  about a second instead of up to a few minutes, including while the market
+  is open.
+- **A session's report is finished after the close.** If a report was written
+  while its session (or week) was still going, it now gets rewritten with the
+  whole day once the session closes, and yesterday no longer shows
+  "In progress".
+- **"Update now" on Reports always does something.** If Keisaku was already
+  writing other reports when you clicked it, the click used to be ignored. Now
+  your report is written next.
+- **One report that can't be written no longer holds up the rest.** Its row
+  says "Couldn't write this report", every other report is still written, and
+  Keisaku tries it again later. Before, the Reports page could say "writing…"
+  forever.
+
 ## 0.1.8 — 2026-09-30
 
 - **The Environment panel's "The hour" box has its bar back.** Like the Range
