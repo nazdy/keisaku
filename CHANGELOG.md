@@ -8,6 +8,20 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.1.7 — 2026-09-30
+
+- **The update button no longer says "The update did not start" when it did.**
+  Clicking **Update** could show that message even though Keisaku went on to
+  update itself. The button now keeps showing "Updating…" and the page comes
+  back on the new version by itself. Because the button runs from the version
+  you already have, you may see the old message one last time when you update
+  to this version. If you do, wait a minute and reload the page.
+- **Running the installer yourself no longer leaves the dashboard off.** After
+  installing an update by hand, the dashboard comes back on its own. Before,
+  it stayed off until you opened Keisaku from its icon.
+- **The dashboard uses two columns in a narrower window**, so it reads better
+  in a side pane of about 1000 pixels instead of as one long column.
+
 ## 0.1.6 — 2026-09-30
 
 - **Keisaku is now installed as compiled code.** The program files in the
