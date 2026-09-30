@@ -8,7 +8,35 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
-## 0.1.9 — 2026-10-01
+## 0.1.10 — 2026-10-01
+
+- **Updates always replace the Keisaku you are running.** An automatic update
+  could install into a different folder than the one Keisaku runs from, if
+  Keisaku had ever been installed a second time somewhere else. When that
+  happened your copy stayed on the old version and the page said "installing"
+  forever. Updates now always go into Keisaku's own folder.
+- **The dashboard always comes back after an install.** Installing a version
+  by hand while an update was still pending used to leave the dashboard
+  closed and the update marked as failed. Now the dashboard reopens and the
+  new version is recorded.
+- Also includes everything in 0.1.9 below, which was withdrawn before most
+  copies received it:
+- **Reports are written much faster.** After the first run, a report takes
+  about a second instead of up to a few minutes, including while the market
+  is open.
+- **A session's report is finished after the close.** If a report was written
+  while its session (or week) was still going, it now gets rewritten with the
+  whole day once the session closes, and yesterday no longer shows
+  "In progress".
+- **"Update now" on Reports always does something.** If Keisaku was already
+  writing other reports when you clicked it, the click used to be ignored. Now
+  your report is written next.
+- **One report that can't be written no longer holds up the rest.** Its row
+  says "Couldn't write this report", every other report is still written, and
+  Keisaku tries it again later. Before, the Reports page could say "writing…"
+  forever.
+
+## 0.1.9 — 2026-10-01 (withdrawn)
 
 - **Reports are written much faster.** After the first run, a report takes
   about a second instead of up to a few minutes, including while the market
