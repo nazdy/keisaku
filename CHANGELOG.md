@@ -8,6 +8,21 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.1.12 — 2026-10-01
+
+- **Settings no longer says "Saved" when it didn't save.** On a day your
+  settings are frozen (a lock fired, or you're down on the session), account
+  roles and limits can't change until the 17:00 ET close. Before, you could
+  still pick a new role and press Save. The page said "Saved", but the change
+  was dropped and the old role came back. Now the Accounts step tells you it's
+  frozen and why, and its controls are greyed out until the close. If you try
+  to save a change the freeze blocks, Save tells you what wasn't saved.
+- **The Coach's give-back line reads right once the day turns red.** After you
+  had handed back more than everything you'd made, it printed "+-58". It now
+  shows the real figure and tells you to flatten.
+- **A Coach fault is shown, not hidden.** If the Coach hits an error, it says
+  so instead of showing an empty panel that looks like a quiet session.
+
 ## 0.1.11 — 2026-10-01
 
 - **MFE and MAE are right when you scale in and out.** The dollar figures on
