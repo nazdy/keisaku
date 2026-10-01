@@ -8,6 +8,28 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.1.11 — 2026-10-01
+
+- **MFE and MAE are right when you scale in and out.** The dollar figures on
+  the MAE/MFE chart counted every contract you added during a trade as if you
+  held all of them at its best and worst moments. A trade you added to and
+  trimmed could show twice the run-up it really had. They now follow the
+  position you actually held, tick by tick, including what you had already
+  taken off. Trades held at one contract are unchanged.
+- **Capture and the efficiency numbers are right on multi-contract trades.**
+  They compared your whole position's result with a single contract's move,
+  so a two-contract winner could read as more than 100% captured. Your capture
+  may read a little lower than before; that is the corrected figure.
+- **The chart's tooltip shows the most contracts you held at once** ("up to 2
+  lots") rather than the total you added during the trade.
+- **A lock that is due now lands the moment you are flat.** A lock never
+  takes the platform while you hold a position, and it used to check only
+  every ten seconds, so flipping straight from one trade into the next could
+  slip past it for half an hour. It now watches for the first flat moment,
+  however short, and locks then. If you open a position in the same instant
+  the lock lands, the platform is handed straight back, so a lock can never
+  trap you in a trade.
+
 ## 0.1.10 — 2026-10-01
 
 - **Updates always replace the Keisaku you are running.** An automatic update
