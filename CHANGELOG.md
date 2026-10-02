@@ -8,6 +8,35 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.1.15 — 2026-10-02
+
+- **"Too many trades too fast" is now one of your recommended locks.**
+  Keisaku reads your own history for how many trades inside 5 minutes,
+  while they are losing, start costing you the rest of the day, and sets
+  the rule there. If your history doesn't show that yet, it starts at 7
+  trades in 5 minutes and says so.
+- **Recommended pattern locks only warn.** The losing streak, the busy half
+  hour and the flurry rule start as warnings. If you want one to ask you,
+  or put you in sim, change it in Settings → Locks.
+- **Recommended numbers say where they come from.** When your history has
+  no clear tipping point for a rule, its explanation now says the number is
+  a starting point, not yours, so you know it's worth adjusting.
+
+## 0.1.14 — 2026-10-02
+
+- **You can see which lock is on and when it ends.** Settings → Locks now
+  starts with whether you can trade. During a lock it says "You're locked
+  out until 10:34 ET", with a countdown, the rule's name and what set it off.
+  Once the lock is over it says "You can trade" and lists today's locks with
+  their start and end times. Your own rules show under the names you gave them.
+- **"Settings frozen" no longer looks like a lock.** After a lock, Settings
+  stays frozen until the 17:00 ET close. That only means you can't edit your
+  rules and limits. It is now a grey tile that says it is not a trading lock,
+  so red always means you can't trade.
+- **Hover the Locks chip in the top bar** to see the lock that is on, its rule
+  and when it ends. After it ends, the chip shows the last lock and when it
+  ended.
+
 ## 0.1.13 — 2026-10-02
 
 - **A lock rule for a flurry of trades.** "Too many trades too fast" in
