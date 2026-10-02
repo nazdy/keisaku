@@ -8,6 +8,25 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.1.13 — 2026-10-02
+
+- **A lock rule for a flurry of trades.** "Too many trades too fast" in
+  Settings → Locks → Add a rule: pick how many trades, in how many minutes,
+  and what happens when you get there while that stretch is losing. It can
+  warn, ask, or put you in sim for a minute or more to reset. Before, the
+  window was fixed at 30 minutes. A short, dense window (say 7 trades in 5
+  minutes) catches a flurry while it is happening.
+- **A flurry lock waits for you to be flat instead of giving up.** A lock
+  can't start while you hold a position, and in a flurry you usually do.
+  These rules used to treat that as done for the stretch. Now the lock
+  starts the moment you're flat, as long as the stretch still qualifies.
+- **The Locks view measures each trade-count rule in its own window.** A
+  5-minute rule was being shown against your busiest half hour, so it looked
+  close to firing when it wasn't.
+- **The session pickers in Settings work again.** Choosing a session under
+  "your session, replayed" (Locks, Alerts, Status) did nothing. It now
+  replays the one you pick.
+
 ## 0.1.12 — 2026-10-01
 
 - **Settings no longer says "Saved" when it didn't save.** On a day your
