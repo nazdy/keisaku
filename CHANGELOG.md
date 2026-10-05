@@ -8,6 +8,36 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.1.16 — 2026-10-05
+
+- **A trade journal.** The new Journal page lists every trade of a session
+  so you can write on it: tags, setup, a rating, a note, or a detailed set
+  of fields. Merge a re-entry into the trade it belongs to and give it a
+  name. The same panel sits under the Tape's player, and the dashboard has
+  one line to tag your last trade. Watch any trade's clip in a popup (W).
+- **Backup & sync.** Settings → Your account → Backup & sync points Keisaku
+  at one folder, for example in Google Drive. Your settings, lock rules,
+  journal, records and trade history are kept there. A new computer pointed
+  at it gets everything back, and a lock on one computer holds the same
+  account on the other until it ends. Losses on one computer don't count
+  toward the other's limits yet, only the locks they set.
+- **Your alerts are tuned on your own recent days.** When Keisaku measures
+  your history, it now checks its adjusted alert model against the one you
+  started with on your most recent sessions, and keeps the adjusted one
+  only if it warns on your bad days as early and isn't noisier. Settings →
+  Your history says which one you're on and why.
+- **Session risk has an Alert | Behaviour switch.** Alert is what your
+  warnings fire on. Behaviour shows just your trading habits, with no P&L,
+  split at your own line: where your sessions usually open.
+- **The Tape plays the way you choose and stays that way.** Continuous plays
+  on through the session, Back-to-back plays each run of trades, Per trade
+  plays one at a time (M cycles). Fullscreen with F or a double-click. Trades
+  your habits scored over your line are marked "Behaviour", with a filter.
+- **Reports** compare each session or week with the previous one as well as
+  your average.
+- Settings no longer runs wider than a phone screen, and card headers are
+  easier to read.
+
 ## 0.1.15 — 2026-10-02
 
 - **"Too many trades too fast" is now one of your recommended locks.**
