@@ -8,6 +8,25 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.2.0 — 2026-10-06
+
+- **The journal, rebuilt.** Every trade opens as a page of properties, like
+  a Notion page: pick from your lists or type a new choice, tick boxes, and
+  write rich notes with headings, lists and checkboxes. Start from the
+  Simple or Detailed set and change it to fit you (add a field, rename or
+  recolour a choice), all from Journal properties (the gear).
+- **Pictures in your notes.** Paste or drop a screenshot straight into a
+  note. It's kept with your journal, and with your Backup & sync folder.
+- **Notes beside the video.** On the Tape, and in a trade's clip (W), press
+  N to write on the trade while it plays. It's the same note as on the
+  Journal page, and it stays there in fullscreen.
+- **Search your whole journal** for a word, a choice or a setup, across
+  every session.
+- Clips that span a recording break now play straight through, and menus
+  open properly in fullscreen.
+- A new install with no trades yet now says so on the Journal page instead
+  of loading for ever.
+
 ## 0.1.16 — 2026-10-05
 
 - **A trade journal.** The new Journal page lists every trade of a session
