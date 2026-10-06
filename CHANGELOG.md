@@ -8,6 +8,12 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.2.1 — 2026-10-07
+
+- A trade's clip in the Journal can be scrubbed again: clicking the bar
+  under the video jumps there, and the playhead keeps moving. Before, the
+  first click (or the clip reaching its first minute) froze the timeline.
+
 ## 0.2.0 — 2026-10-06
 
 - **The journal, rebuilt.** Every trade opens as a page of properties, like
