@@ -8,6 +8,11 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.2.3 — 2026-10-07
+
+- Housekeeping: a page meant only for building Keisaku is no longer
+  included in the install. Nothing you use changes.
+
 ## 0.2.2 — 2026-10-07
 
 - Scrub the Tape and your trade clips with a sideways mouse wheel (or a
