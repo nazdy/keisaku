@@ -8,6 +8,16 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.2.2 — 2026-10-07
+
+- Scrub the Tape and your trade clips with a sideways mouse wheel (or a
+  left/right trackpad swipe): each notch is 5 seconds, right is forward.
+  Past the end of a trade the video now keeps playing instead of stopping,
+  so you can run straight on into what happened next.
+- The Coach no longer stops working on sessions that reach its "going
+  nowhere" line.
+- New loading animations in Keisaku's own style while pages load.
+
 ## 0.2.1 — 2026-10-07
 
 - A trade's clip in the Journal can be scrubbed again: clicking the bar
