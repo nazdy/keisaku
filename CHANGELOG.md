@@ -8,6 +8,16 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.2.4 — 2026-10-08
+
+- Keisaku now tells you when an account you haven't given a role starts
+  trading. Until it has one, a lock still covers it, but it isn't judged
+  against a daily loss limit and sends no alerts. You get one notification
+  per session, a banner on the dashboard, and a "New" tag on the account in
+  Settings › Accounts. If its trades match your main account's one for one,
+  Keisaku says it looks like a copy. Pick a role and Save, or leave it on
+  Other or Hide and Save, and the warning goes away.
+
 ## 0.2.3 — 2026-10-07
 
 - Housekeeping: a page meant only for building Keisaku is no longer
