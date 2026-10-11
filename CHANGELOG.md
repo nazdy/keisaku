@@ -8,6 +8,38 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.2.6 — 2026-10-11
+
+- **Fix:** the Tape now finishes each session properly. The installer had left
+  out a small helper (ffprobe), so a recorded session was never joined, cut
+  down to your trade clips or backed up. Nothing you recorded is lost; it is
+  finished the next time Keisaku tidies up after the close.
+- Record more than Sierra's main window. Settings › Tape › My screens lets you
+  tick any mix of whole screens and Sierra's main window, e.g. two screens, or
+  Sierra's window plus the screen with your detached charts. Each one is its
+  own video, and on the Tape and in the Journal a Screen 1 | Screen 2 switch
+  (or S) changes between them at the same moment.
+- If the Tape is switched on but isn't recording, the bar and Settings › Tape
+  now say so in red, with the reason.
+- Tape recordings are on by default for new installs.
+- Backup & sync can now include your Tape recordings (what you keep: your trade
+  clips, or the whole sessions). Another computer pointed at the same folder
+  can play them on its Tape and in its Journal.
+- Finished reports are shared between your computers through Backup & sync.
+- A day you traded the same account on two computers now shows the whole
+  session on both, instead of half on each.
+- Journal: trades you haven't written on are marked, a Written filter, rows on
+  two lines, every tag shown, and the Result column shows pts and dollars at
+  the same size.
+- Merge trades into one journal entry straight from the Tape. Tick trades
+  in the Highlights list and press Merge into one, as on the Journal page.
+  Or, while watching (fullscreen too), press X on each re-entry and merge
+  them from the notes panel, which also has a Merge… list of the trades
+  either side of the one on screen.
+- The top of the notes panel now always shows the trade you are writing on
+  and its result, and which trades it is merged with, with Split and
+  Unmerge all.
+
 ## 0.2.4 — 2026-10-08
 
 - Keisaku now tells you when an account you haven't given a role starts
