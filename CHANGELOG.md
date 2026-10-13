@@ -8,6 +8,17 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.2.7 — 2026-10-14
+
+- Deleting today's trade logs is no longer a way out of a lock. Keisaku keeps
+  its own copy of the day's logs as you trade, and with Backup & sync on, a
+  copy in your sync folder too. If a log is deleted or cut short, the day is
+  still read in full, and order entry is locked for the rest of the session
+  under "History deleted".
+- You can write in the Journal about a trade that is still open.
+- A session's Tape minutes now count footage from every one of your computers.
+- The dashboard refreshes faster and uses less of your computer.
+
 ## 0.2.6 — 2026-10-11
 
 - **Fix:** the Tape now finishes each session properly. The installer had left
