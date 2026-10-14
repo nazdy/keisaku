@@ -8,6 +8,25 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.3.0 — 2026-10-15
+
+- **New: Keisaku can see a winner you handed back.** A trade that ran well your
+  way and was closed for little or nothing is now a warning sign of its own.
+  Several of them in half an hour raise your risk ring and can headline an
+  alert ("Giving winners back"), because what usually follows is trading
+  faster. "Ran well" is measured from your own history: it is the top quarter
+  of your own trades by how far they ran, not a fixed number of points.
+- Your Coach can now tell you when handing winners back has cost you, judged
+  on your own sessions, and stays quiet if it hasn't.
+- Settings › Alerts has a new slider for it, "Giving back winners".
+- After an update that changes what Keisaku measures, it now re-reads your
+  history by itself at the first quiet moment: the market closed, or 30
+  minutes flat with nothing working. You don't need to do anything. Your
+  slider settings are kept.
+- New: a Keisaku icon in the notification area next to the clock. It shows at
+  a glance whether Keisaku is running and whether a lock is on.
+- The dashboard now updates as soon as you save something in Settings.
+
 ## 0.2.7 — 2026-10-14
 
 - Deleting today's trade logs is no longer a way out of a lock. Keisaku keeps
