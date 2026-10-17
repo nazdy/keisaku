@@ -8,6 +8,41 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.3.2 — 2026-10-17
+
+- **Fixed: a trade that flipped straight from long to short (or back) was
+  read wrong.** A single order that closed your position and opened the other
+  way was counted as one trade instead of two, and two closes in the same
+  instant could be matched to the wrong exits. Your trade count, points and
+  the numbers your Coach and alerts compare you against now include those
+  trades correctly.
+- **Fixed: two orders filled in the same millisecond at the same price were
+  counted once.** If you trade on two computers, that could make Keisaku
+  refuse the other computer's copy of the day.
+- **Fixed: the dashboard could show your session peak too low.** The Session
+  Peak and Trough, the peak marker, each instrument's peak and the give-back
+  figure now come from every trade you closed, not from 5-minute points. Your
+  locks and alerts were never affected.
+- Fixed: a session you traded only in the evening could be left out of your
+  history.
+- Fixed: in the evening, after the 6 pm ET reopen, the session already under
+  way could be counted into your history before it was over.
+- The win-rate alert only compares you with "your normal" once Keisaku has
+  measured it from your own trades. Before that it just says how many of your
+  recent closes made money.
+- New users get "Normal" as the recommended alert level until Keisaku has
+  seen 10 of your sessions; before that there isn't enough to tune it to you.
+- Backup & sync warns you when Google Drive has set some of your backup files
+  aside, and names which files and days are only on this computer.
+- Tape: the notes drawer follows what is playing, J and K step from the
+  playhead, and Merge ticks every trade already in the entry.
+- Reports, Journal and Tape say what went wrong when something fails to load,
+  instead of an empty page or "No trade logs found". The Journal fits a phone
+  screen.
+- Easier-to-read grey text in the light theme. Edge's Total R is labelled
+  "gross".
+- The dashboard rebuilds faster.
+
 ## 0.3.0 — 2026-10-15
 
 - **New: Keisaku can see a winner you handed back.** A trade that ran well your
