@@ -8,6 +8,13 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.3.3 — 2026-10-18
+
+- The status chips at the top of every page are easier to read in the light
+  theme: darker text, and the time beside each one is no longer faded.
+- Small tidy-ups behind the scenes. Nothing about your alerts, locks or
+  numbers changes.
+
 ## 0.3.2 — 2026-10-17
 
 - **Fixed: a trade that flipped straight from long to short (or back) was
