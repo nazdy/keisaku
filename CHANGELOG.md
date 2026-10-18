@@ -8,6 +8,35 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.3.4 — 2026-10-19
+
+- **Pick your colours.** The button with three coloured dots, top right of
+  every page, opens ten palettes: Classic, Clarity, Kanso Midori, Flexoki,
+  Catppuccin, Kanagawa, Terminal Precision, Sumi & Vermilion (the new
+  default), Kanso and Indigo Aizome. Each works in light or dark, and every
+  page remembers your choice. In every palette a lock never looks like a
+  loss.
+- A new Keisaku logo and app icon.
+- The dark status boxes you see when you hover the chips at the top, the
+  chart readouts and the status panel in Settings now take on the palette
+  you picked. They still read like a terminal, with gains and losses in the
+  palette's own colours.
+- The hover cards (the (i) beside a heading or a tile) carry a thin line of
+  the palette's colour along the top.
+- **The Tape is easier to scan.** Each trade row shows one behaviour badge
+  judged against your own line, with the ladder, lock, alert and quick
+  re-entry marks in their own columns. Filters are simpler. Each timeline is
+  labelled and has a zoom box, and you can hover a trade on it for its card.
+  The Journal uses the same trade rows.
+- The player's header shows the trade the way its row does: number, side,
+  contract, points, entry to exit, time, how long it was held and its
+  behaviour badge.
+- The keyboard shortcuts on the Tape open when you hover the **?**.
+- Fixed: while you wrote a note on the Tape, the notes panel could stay on
+  that trade after the tape had moved on to later ones. It now follows the
+  trade on screen a few seconds after you stop typing.
+- Nothing about your alerts, locks or numbers changes.
+
 ## 0.3.3 — 2026-10-18
 
 - The status chips at the top of every page are easier to read in the light
