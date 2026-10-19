@@ -8,6 +8,37 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.3.5 — 2026-10-19
+
+- **The Keisaku logo is where you can see it.** Settings opens with it on
+  the Welcome page, and the installer now starts on a welcome page with the
+  Keisaku icon and lettering (it used to open straight on the licence).
+- The loading animation is redrawn from the logo: the stick, the candles
+  falling and climbing, and the ink where it strikes.
+- **Clarity is the default colour theme** for a new install, and it no
+  longer uses gold: plain grey boxes with a dark accent, red only for
+  losses and blue only for gains. Warnings keep an amber colour so they
+  still stand out. If you already picked a theme, you keep it.
+- **The dashboard has no more empty gaps.** Once you have traded, the
+  lock rules no longer sit under the risk ring, so nothing gets pushed down
+  the page (they are still in Settings › Locks and on the Locks chip at
+  the top). The risk card lines up with the market panel beside it, and its
+  score chart fills the room. The Coach runs the full width in two
+  columns, so a long Coach shows everything without leaving a hole beside
+  it.
+- Before your first trade, your lock rules show as one compact card under
+  the market panel.
+- In dark mode, white text on coloured buttons and icons was hard or
+  impossible to read in several themes. It is dark now wherever that reads
+  better.
+- The menu at the top is in a new order: Dashboard, Tape, Journal, Reports,
+  Settings.
+- In Settings › Your history, each finding about your trading is coloured
+  by whether it is good or bad news, with its key figures picked out.
+- The intro line on the Welcome page and the curve's "View as table" button
+  are gone for now.
+- Nothing about your alerts, locks or numbers changes.
+
 ## 0.3.4 — 2026-10-19
 
 - **Pick your colours.** The button with three coloured dots, top right of
