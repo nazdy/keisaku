@@ -8,6 +8,21 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.3.6 — 2026-10-20
+
+- **Your daily limit now locks you even if your last trade was a winner.**
+  Past your daily limit, a green trade used to stop the lock from landing
+  every time you went flat, so a session could stay live well past its
+  limit. It now locks the first moment you are flat. If you have climbed
+  back inside the limit by then, it still does not lock.
+- **No more flashing "open orders" dialogs while you are in a trade.** When
+  Sierra says you have working orders, Keisaku now waits for your position
+  or orders to change, or a minute to pass, before it tries to lock again.
+  It used to try every few seconds, and Sierra's warning popped up and
+  disappeared each time.
+- The session stats on the dashboard sit in a card of their own and fill
+  the space beside the PnL chart, with bigger numbers.
+
 ## 0.3.5 — 2026-10-19
 
 - **The Keisaku logo is where you can see it.** Settings opens with it on
