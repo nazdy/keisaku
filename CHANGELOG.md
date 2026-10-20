@@ -8,6 +8,31 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.3.7 — 2026-10-21
+
+- **The Coach explains why.** Where a pattern really shows in your own
+  history, a Coach line can now carry a short note from two trading-psychology
+  books (Tendler, Goldstein): why the pattern happens and one thing to try.
+  You get it only when your own trades back it up, and at most once per topic
+  in a session. A lock also suggests something to practise while you wait.
+- **A focus for the month.** The Coach picks the one pattern that has cost
+  you most lately and keeps it in front of you.
+- **Shorter Coach cards.** Each line gives the fact and what to do. The
+  evidence sits under "why?", and each card ends with one general tip.
+- **The scorecard grades only the rows that apply to you.** How to read it
+  now sits behind an (i) beside its title.
+- **Reports open on one screen.** Every table is folded underneath it.
+- **Lock suggestions for every kind of lock**, worked out from your own
+  history. The give-back warning can now be set as three steps, each
+  stronger than the last.
+- **Tape survives a power cut.** A recording a power cut left unreadable is
+  recovered the next time the recorder starts.
+- **The tray icon:** "Exit Keisaku…" opens Settings, "Hide icon until
+  sign-in" is offered while all is well, and two notifications tell you if
+  Keisaku stops or your locks get paused.
+- **Colours:** the Clarity palette's header icons are now indigo, and the
+  Kanso palettes look less hazy.
+
 ## 0.3.6 — 2026-10-20
 
 - **Your daily limit now locks you even if your last trade was a winner.**
