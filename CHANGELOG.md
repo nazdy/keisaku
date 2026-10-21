@@ -8,6 +8,34 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.3.8 — 2026-10-21
+
+- **Choose which accounts your model learns from.** Settings › Accounts has
+  three separate choices per account: its **Role** (what the locks judge),
+  **Show** (whether it's on the dashboard) and **Measured** (whether its
+  trades go into your alerts, tipping points, early tell, Coach and reports).
+  An old account can stay measured while hidden, and a copy can be shown
+  without being measured.
+- **See what goes into your model.** A picture on the Accounts step shows how
+  many trading days are measured, from which accounts, and what the dashboard
+  and the locks use. The "How far back" slider sits right under it.
+- **A copy never stands in for your main.** Each day is measured from the
+  account you traded most, but on a day your main traded, a copy that
+  happened to fill a trade more is no longer read in its place.
+- **Old accounts tidied away.** Accounts that haven't traded in two weeks
+  start hidden (their past days stay viewable) and are folded under "Older
+  accounts". Tick several accounts to change their role, Show or Measured at
+  once.
+- **Clearer while frozen.** After a lock, Settings says on the page what is
+  frozen and until when, instead of fading it, and once the lock is over the
+  banner is a single line.
+- **Behaviour tooltips**, a "Start from today" choice and a slider for how much
+  of your history is measured.
+- **Locks:** standing aside for a backup account works again, a daily-limit
+  lock is no longer named after an earlier "Bad open" lock, and refusals say
+  why and what to do.
+- **The dashboard's "Updated" time** is outlined and flashes when it refreshes.
+
 ## 0.3.7 — 2026-10-21
 
 - **The Coach explains why.** Where a pattern really shows in your own
