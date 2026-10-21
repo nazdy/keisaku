@@ -8,6 +8,10 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.3.9 — 2026-10-22
+
+- Fixed: Settings refused to save once "Giving back winners" had been tuned on the Alerts step, so setup could not be finished and Keisaku could not be started. Saving works again.
+
 ## 0.3.8 — 2026-10-21
 
 - **Choose which accounts your model learns from.** Settings › Accounts has
