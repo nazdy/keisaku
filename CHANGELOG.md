@@ -8,6 +8,10 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.3.12 — 2026-10-22
+
+- An update now waits until Keisaku has finished measuring your history, instead of interrupting it part-way.
+
 ## 0.3.11 — 2026-10-22
 
 - Fixed: if Keisaku was closed or updated while it was measuring your history, Trading History could stay stuck part-way (for example at 64%) and never measure again. It now says the measurement was interrupted, and you can measure again.
