@@ -8,6 +8,18 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.3.13 — 2026-10-26
+
+- Fixed: on a PC where Windows Security (Smart App Control) blocks part of Keisaku, Settings stuck on "Loading your settings…" for ever. It now opens, and a banner says which file Windows refused and how to allow it. Restarting Keisaku from Settings also says so instead of claiming it worked.
+- Fixed: "Max loss a day" and the "Daily loss limit" lock rule could end up as two different numbers, so the limit shown in the top bar and the alerts didn't match the lock. They are now one number: change either and the other follows, with your other dollar rules moving in step. If yours had drifted apart, Settings › Locks shows both and lets you pick one.
+- Fixed: an old account that no longer trades could make most of your history read as empty, so Keisaku measured only a handful of sessions. Every day is read again.
+- Fixed: switching between live and sim in Settings now re-measures on the side you switched to, and switching back keeps the account roles you had there.
+- Fixed: Trading History could freeze at a percentage while measuring.
+- The Accounts step tries again when counting your trading days fails, and lists every measured account instead of stopping at eight.
+- Tape: trade clips come out as one clip per trade instead of one-minute pieces, finished trades are backed up during the session rather than only after the close, and the Tape no longer skips a minute where backed-up clips overlapped.
+- The dashboard rebuilds a day that arrived before its market data, so its edge stats and Coach show up instead of staying blank.
+- If two copies of Keisaku are installed on one PC, only the one that's running serves pages and syncs; the other stands by and says so.
+
 ## 0.3.12 — 2026-10-22
 
 - An update now waits until Keisaku has finished measuring your history, instead of interrupting it part-way.
