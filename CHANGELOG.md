@@ -8,6 +8,12 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.4.1 — 2026-10-27
+
+- Fixed: the Coach could say the same thing twice. When a reading had both its own line and one of your tipping points (for example fills per 10 points of range), you got two cards, and two entries in the "needs your attention" box. Each measurement now gets one card, with your tipping point and what it has cost you under its "why?".
+- Cleaner Coach cards: the "From experts" note and its "Try" are no longer boxes inside the card, and in the "needs your attention" box the detail folds under "Why, and what to try" so the problem and what to do come first.
+- Clearer explanations everywhere a behaviour is named (Statistics, Settings, the dashboard, the reports): hover one and it now says what it is and how it is counted, in plain words. For example, a snap re-entry is getting back in within 2 minutes of closing a trade, and a winner handed back is a trade that ran a set number of points your way and closed for little or nothing, with that number taken from your own trades. The long technical notes are gone from the hovers, and a few names are plainer, such as "More trades than the market's move was worth".
+
 ## 0.4.0 — 2026-10-27
 
 - New: a Statistics page. Pick any dates, an instrument and an account, and see your results over that stretch: net P&L, win rate against your break-even, profit factor, expectancy in dollars and R, drawdown, an equity curve, a calendar of your days, and where your money came from by hour, side and instrument. At the bottom, from your measured history: what your history shows, the behaviours getting better and worse lately, and your early tell.
