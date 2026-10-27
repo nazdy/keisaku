@@ -8,6 +8,15 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.4.0 — 2026-10-27
+
+- New: a Statistics page. Pick any dates, an instrument and an account, and see your results over that stretch: net P&L, win rate against your break-even, profit factor, expectancy in dollars and R, drawdown, an equity curve, a calendar of your days, and where your money came from by hour, side and instrument. At the bottom, from your measured history: what your history shows, the behaviours getting better and worse lately, and your early tell.
+- New: Count P&L as Net or Gross, in Settings › Instruments beside your daily loss limit. Pick the one your prop firm uses for its daily drawdown. Your limit, your R, and every dollar alert and lock follow it. Net stays the default, so nothing changes unless you switch.
+- Starting fresh is quieter. Until Keisaku has 10 of your sessions, it only speaks about money: your daily loss steps, giving back a good day, and a clearly bad losing run. Behaviour alerts switch on once it has enough of your history to judge them against. Settings › Alerts shows how many sessions it has so far.
+- Giving back a good day is said once, and once more if you pass half of it, instead of again at every step down. With a give-back lock rule on, you get that rule's warning only, not two toasts for one thing.
+- Locks react faster when you go flat or cancel your orders: Keisaku now reads both from Sierra's trade log as well as its position and order files, which can lag by up to a minute.
+- Settings › Instruments: your daily loss limit, risk per trade, trades per session and Net/Gross sit on one row, with what each means behind its (i).
+
 ## 0.3.13 — 2026-10-26
 
 - Fixed: on a PC where Windows Security (Smart App Control) blocks part of Keisaku, Settings stuck on "Loading your settings…" for ever. It now opens, and a banner says which file Windows refused and how to allow it. Restarting Keisaku from Settings also says so instead of claiming it worked.
