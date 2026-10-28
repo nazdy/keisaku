@@ -8,6 +8,10 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.4.2 — 2026-10-28
+
+- Fixed: on the Tape, watching a session that is still recording (or has not been joined into its full tape yet) could jump back about a minute and replay the same stretch over and over, so a trade's clip never reached the entry. It now plays straight on from one minute of footage to the next.
+
 ## 0.4.1 — 2026-10-27
 
 - Fixed: the Coach could say the same thing twice. When a reading had both its own line and one of your tipping points (for example fills per 10 points of range), you got two cards, and two entries in the "needs your attention" box. Each measurement now gets one card, with your tipping point and what it has cost you under its "why?".
