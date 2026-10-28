@@ -8,6 +8,13 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.4.3 — 2026-10-28
+
+- Fixed: the Journal's video player could get stuck replaying the same moment over and over, the same loop the Tape had in 0.4.2. Both players now play straight through your footage.
+- Fixed: if you trade gold, or another instrument Keisaku had no tick data for, or you trade MES without having picked it as your main market, the Coach card was missing from your dashboard. The Coach now speaks for whatever you trade. Without tick data it leaves out only the lines that need it, such as how much of each winner you kept.
+- Fixed: on days with only a few trades, or with no tick data for what you traded, there was no daily report. Those days now get one, with your account's dollars, and it says why there are no points.
+- Fixed: the dashboard's risk ring could read one of your copy accounts instead of the main account you chose. It now reads the same account as the Tape and the Journal.
+
 ## 0.4.2 — 2026-10-28
 
 - Fixed: on the Tape, watching a session that is still recording (or has not been joined into its full tape yet) could jump back about a minute and replay the same stretch over and over, so a trade's clip never reached the entry. It now plays straight on from one minute of footage to the next.
