@@ -8,6 +8,12 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.4.4 — 2026-10-30
+
+- New: keep your Tape off your disk. In Settings › Tape you can choose how many days a session stays on this PC; after that it is played from your Backup & sync folder instead. A session only leaves this PC once Keisaku has checked that every file is safely in the folder, and never before it has been cut into its full tape. The default is to keep everything, so nothing changes unless you set it.
+- Settings › Tape shows whether a Backup & sync folder is set and Tape backup is on, with the fix beside each, and hides "Try it" once this PC has recorded with no problem.
+- Fixed: in the Keisaku panel, starting the dashboard for your phone or another PC ([2]) while it was already running closed the window before you could read why. It now replaces the running one and keeps the window open.
+
 ## 0.4.3 — 2026-10-28
 
 - Fixed: the Journal's video player could get stuck replaying the same moment over and over, the same loop the Tape had in 0.4.2. Both players now play straight through your footage.
