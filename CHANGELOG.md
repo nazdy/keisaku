@@ -8,6 +8,15 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.4.6 — 2026-11-02
+
+- Recent sessions count more: Keisaku now weighs your history by session rather than by calendar day, so a quiet week no longer makes old habits look fresh. A slider in Settings sets how quickly older sessions fade.
+- New locks: after a winning, a losing or a scratch trade. What counts as a scratch is a range, prefilled from your own trades.
+- Settings › How it works redrawn: every model shows what it reads and what it feeds, your numbers as chips, and a chart of how much each session counts under your recency setting.
+- The Coach can show proven lines only (Settings). Lines that are still leaning stay on by default.
+- Statistics: jump links in their own bar, P&L by behaviour score, and a clearer "What's changing lately".
+- Less clutter: longer explanations moved behind (i) tips.
+
 ## 0.4.5 — 2026-11-01
 
 - Alerts speak about what you are doing, not about money: no more "% of your daily limit". Each alert names one of your own tipping points, measured on your history, with what it has cost you, and a short line under the title says what to do.
