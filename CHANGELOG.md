@@ -8,6 +8,15 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.4.5 — 2026-11-01
+
+- Alerts speak about what you are doing, not about money: no more "% of your daily limit". Each alert names one of your own tipping points, measured on your history, with what it has cost you, and a short line under the title says what to do.
+- New checks at the open (9:30 to 10:00), and an open check when your first trades run hot.
+- A tipping point no longer repeats itself within the hour, and on a day you are already well green only the ones that have mattered on your green days speak. Expect fewer alerts, most of all on good days.
+- New: getting back in within seconds of going flat, measured against your own quickest re-entries. It shares one voice with the existing fast re-entry alert, so you never get both.
+- The Coach now has cards for trying the same trade again, a losing flurry, the open, and re-entering within seconds.
+- Statistics, Settings and the Journal are reorganised: tabs, trend strips, a read-only Tipping Points page, and group comparisons in the Journal.
+
 ## 0.4.4 — 2026-10-30
 
 - New: keep your Tape off your disk. In Settings › Tape you can choose how many days a session stays on this PC; after that it is played from your Backup & sync folder instead. A session only leaves this PC once Keisaku has checked that every file is safely in the folder, and never before it has been cut into its full tape. The default is to keep everything, so nothing changes unless you set it.
