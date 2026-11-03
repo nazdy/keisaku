@@ -8,6 +8,16 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.4.9 — 2026-11-04
+
+- Journal: open a trade to see it broken down: entry to exit, your risk at entry, how far it ran for and against you, how well you got in and out, a candle chart with your fills and your stop, every execution, and every move of the stop.
+- Trade screenshots: Keisaku can picture the Sierra chart you pick for each instrument at every entry and exit (Settings › Tape › Trade screenshots). They sit beside the breakdown, and Backup & sync's own switch decides whether they are kept in the cloud.
+- The trade sheet: one stats card, the journal beside the breakdown; a Notes button on the Tape's rows; clicking a trade on the dashboard's scatter opens it.
+- A lock rule now silences a tipping-point pop-up only when it measures the same thing and would act first. Losses today are no longer silenced by your losing-streak rule, so expect a few more pop-ups than before.
+- "Is it still happening?" is one rule for pop-ups and the Coach, so a habit no longer flickers on and off around its third time.
+- Statistics › What's changing lately is easier to read: the situation is the big word, Earlier and Lately are spelled out, and tooltips say what each figure measures.
+- Three new colour themes: Carbon (true black for dark rooms and OLED screens), Nord (softer Arctic colours for long sessions) and Broadsheet (daylight paper, black ink, serif titles).
+
 ## 0.4.8 — 2026-11-03
 
 - Your early tell (the box under the ring) now asks "is it real?" on the same fixed memory as every other pattern, not on the recency slider. A habit you fixed long ago stays your tell until your newest weeks show it gone; the slider only sets how quickly that is noticed.
