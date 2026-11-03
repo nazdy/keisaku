@@ -8,6 +8,23 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.4.8 — 2026-11-03
+
+- Your early tell (the box under the ring) now asks "is it real?" on the same fixed memory as every other pattern, not on the recency slider. A habit you fixed long ago stays your tell until your newest weeks show it gone; the slider only sets how quickly that is noticed.
+- Settings › How it works: a new "Two checks" card shows the two questions behind every pattern, which one the slider changes (with a preview), and what each outcome means for you.
+- Also in this update: everything under 0.4.7 below (far fewer pop-ups, and Keisaku measures your history again by itself), which was not released on its own.
+
+## 0.4.7 — 2026-11-03
+
+- Pop-ups are kept for what matters: a tipping point your history proves, a heads-up before one of your lock rules, a fast run of losses, the open check, and a day handed back from its high. A warning sign crossed on its own is now a Coach line instead of an interruption, so most days bring far fewer pop-ups.
+- Two questions behind every pattern. Is it real: measured on your sessions with the newest counting most (a session 30 back counts half). Is it still happening: your newest few weeks, set by the recency slider in Settings, which is now called "How fast Keisaku notices you've changed". A habit you fix goes quiet; one that comes back speaks again.
+- No more "worse in both halves of your history": on a long history that let old months decide what you do now. Tipping points, Coach lines, findings and the Statistics marks all use the rule above.
+- Only proven tipping points pop up. One that is likely but not yet proven stays in the Coach, marked.
+- The Coach shows "Far past your tipping point" in red again when you are well beyond a level your good days almost never reach.
+- Starting fresh: tipping points and the open check now wait until Keisaku has enough of your sessions; with the lock off, your daily loss limit is said again once you are past it; no heads-up for a lock that has already acted today; one give-back message, not two; and the give-back line starts from your own daily limit, never a fixed dollar amount.
+- After this update Keisaku measures your history again by itself, at the next quiet moment. Your settings, including alerts switched off, stay exactly as they are.
+- Dashboard: full width, full-size figures, and the explanations under tiles moved into tooltips.
+
 ## 0.4.6 — 2026-11-02
 
 - Recent sessions count more: Keisaku now weighs your history by session rather than by calendar day, so a quiet week no longer makes old habits look fresh. A slider in Settings sets how quickly older sessions fade.
