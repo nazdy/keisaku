@@ -8,6 +8,14 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.4.10 — 2026-11-05
+
+- Journal: every trade now says what happened after you exited. For each exit it plays the tape forward and gives two verdicts, in green or red: within the hour (was closing right, or did you close too early or cut a good trade?) and over the rest of the session (left at your initial stop, would holding have paid?). Where a stop you moved took you out, it says whether leaving the initial stop would have done better.
+- Each trade's breakdown also shows your risk at its worst (peak risk) when you scaled in or moved the stop away, the best price reached before each stop move, and how each stop order ended (filled, moved, or cancelled when you closed).
+- New setting: Minimum profitable trade (Settings › Limit, risk and R, default +1.5 trade R). It is the size of winner every exit is judged against: closing short of it before price got there is "closed too early", and closing past it is a "good exit" unless the trade ran another full minimum.
+- The Coach watches your stops and exits: no stop on a trade, a stop moved further away, closing winners too early, cutting good trades before the stop, moving the stop too soon, and being stopped out by a stop you moved. An exit line speaks only when at least two of today's trades were good trades cut AND holding all of them would have made more. One trade that went on to win a lot is never a line.
+- Trade R is each trade's own initial stop distance, so a verdict means the same at one contract or ten; dollars follow the contracts you traded.
+
 ## 0.4.9 — 2026-11-04
 
 - Journal: open a trade to see it broken down: entry to exit, your risk at entry, how far it ran for and against you, how well you got in and out, a candle chart with your fills and your stop, every execution, and every move of the stop.
