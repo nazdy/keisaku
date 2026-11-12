@@ -8,6 +8,26 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.5.0 — 2026-11-12
+
+- Ask Keisaku can run on OpenAI too: pick OpenAI (ChatGPT) under Which AI in Settings › Ask Keisaku and paste an OpenAI API key. GPT-6.1 Sol is the default, GPT-6 Astra the most capable, GPT-6 Luna the cheapest. A ChatGPT subscription does not include API use, so this needs an API key.
+- Ask Keisaku in a terminal on the plan you already pay for: Claude Code and Codex CLI (your ChatGPT plan) connect in one click, next to Claude Desktop, Gemini CLI and Antigravity.
+- Each connected app has Test, which starts Keisaku the way the app does and says whether it answers.
+- Claude Desktop says "Restart Claude Desktop" only when it really has not loaded Keisaku yet, and Gemini CLI shows the folders it trusts: it runs Keisaku only there.
+- After a lock fired, Settings no longer refuses your AI key, model, the chat's on/off switch, or connecting and disconnecting an AI app. None of them changes a limit; your lock rules stay frozen until the close as before.
+
+- Zoom into the Tape, a trade's clip and any picture opened large: scroll the wheel to zoom in where the pointer is, hold the button and drag to move around, 0 for the whole picture again. Works in fullscreen too. A trade's entry and exit screenshots now open large in the Journal (← / → between them) instead of in a new tab.
+- The Tape shows limits you set and took off without a fill: each gets its own highlight with the same footage before and after as a trade, a bar on the timeline, and a list under the trades. On by default; Settings › Tape has a switch.
+- Notes are written like a Notion page: no toolbar, type / for blocks, Tab to nest bullets, numbers and to-dos at any depth, select text for bold or a link, drag a block by the grip beside it. Toggles, dividers and callouts are new. Images still drag and paste in.
+- The day has a checklist of its own: the things you tick before trading, set once in Settings › Journal › Checklist and ticked each day on the dashboard or in the Journal.
+- Settings › Journal shows one thing at a time: trade fields, day fields, the prep and review templates, the checklist.
+- A trade's and a day's fields read like Notion's properties, with no box round each value.
+- The dashboard no longer picks a "plan" out of a heading of your prep, and the next prep no longer shows lines from the last review: a template is just a template.
+- A day in the Journal is now a page of its own at the top of the session: the date and what the session came to, then your prep and your review in one readable column, then the trades. The part that matters now is open; the other folds to a line. The list of sessions marks which days have their prep and review written.
+- Write today's prep straight on the dashboard before your first trade; after the session, the dashboard reminds you to write the review until you have.
+- Notes read crisper: Notion's text sizes, no blurred backdrop behind a page opened over the Journal, and a + beside the grip to add a block under it.
+- When something was changed both here and in Notion, the day shows one line you open to compare the two word by word, with "keep all" on either side.
+
 ## 0.4.10 — 2026-11-05
 
 - Journal: every trade now says what happened after you exited. For each exit it plays the tape forward and gives two verdicts, in green or red: within the hour (was closing right, or did you close too early or cut a good trade?) and over the rest of the session (left at your initial stop, would holding have paid?). Where a stop you moved took you out, it says whether leaving the initial stop would have done better.
