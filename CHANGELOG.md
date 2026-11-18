@@ -8,6 +8,23 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.5.1 — 2026-11-19
+
+- New locks: for behaviours and tipping points, a Full Tilt lock, a profit target, a behavioural-reading lock and no-trading hours. Add one from a searchable picker (Basic / Advanced).
+- Timed locks can escalate: each lock in a session runs longer than the last (for example 1 → 2 → 3 min). Type the steps any way you like, and the box reads them back.
+- An account you add after today's limit was hit can't release the lock. It counts from the next session.
+- If Sierra loads an account whose fills were made outside Sierra, Keisaku now reads that day's fills and judges them, instead of reading the account as $0.
+- Sierra accounts named RTG… and RTSL… are recognised.
+- With Strong locks, the guard restarts within a minute if it is stopped, instead of within an hour. Settings updates an older guard task for you.
+- A repeat-run lock that can't start within 15 minutes of the trade that earned it is dropped instead of starting late.
+- The win guard judges the whole trade, not just the last fill.
+- Settings: a refused save says why, next to Save. A save shows its steps while it runs. Each lock rule has a one-line recommendation, with the reasons in its (i).
+- Journal: weekly reviews (synced with Notion both ways), a trade template, a Type field (Scalp / Intraday / Swing / Spot), importing your own journal's days and trades, trade and Tape references in notes, and Trades and Compare load much faster.
+- Share a trade clip: trimmed, cropped and blurred, with a trade card, at 1x–4x speed for longer trades.
+- The Tape marks trades taken at Full Tilt in red. Video and picture quality can be set in Settings › Tape. Clicking a zoomed video plays and pauses it; dragging pans.
+- Ask Keisaku can use local Codex models.
+- The tilt meter is off by default, with a one-line status bar.
+
 ## 0.5.0 — 2026-11-12
 
 - Ask Keisaku can run on OpenAI too: pick OpenAI (ChatGPT) under Which AI in Settings › Ask Keisaku and paste an OpenAI API key. GPT-6.1 Sol is the default, GPT-6 Astra the most capable, GPT-6 Luna the cheapest. A ChatGPT subscription does not include API use, so this needs an API key.
