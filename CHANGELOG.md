@@ -8,6 +8,18 @@ top section into the GitHub release notes (testers see it in the update pill)
 and puts this whole file on the release repo, so every line is written for the
 trader: what changed for you, not which function moved. -->
 
+## 0.5.2 — 2026-11-22
+
+- Statistics › Profile: what is costing you most, ranked by cost, with one thing to try for each. Settings › History shows the top two.
+- Statistics follows your main account through time. When you promote a new main, past sessions stay read from the account that was main then, instead of rebuilding the whole history.
+- Statistics loads much faster, and Keisaku uses far less memory while it sits idle.
+- Accounts: a new Independent role for an account you trade separately. Its own trades can trigger lock rules.
+- An account with no role is flagged on every page and never becomes your main by itself.
+- Locks: no two locks back to back without a trade in between. A repeat-run lock fires once. A losing-run lock fires again only on a loss that takes the run past its cut.
+- Settings lets you lower your daily limit while a freeze is on.
+- The behavioural-reading and Full Tilt locks now come with a note on what to do during the wait.
+- Coach: on a fast Nasdaq tape, a new line says when your stop is tighter than the room the tape needs, and to cut size rather than squeeze the stop.
+
 ## 0.5.1 — 2026-11-19
 
 - New locks: for behaviours and tipping points, a Full Tilt lock, a profit target, a behavioural-reading lock and no-trading hours. Add one from a searchable picker (Basic / Advanced).
